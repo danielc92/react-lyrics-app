@@ -4,7 +4,7 @@ import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 import {Provider} from './Context';
 import Tracks from './components/Tracks';
 import Nav from './components/Nav';
-
+import Lyrics from './components/Lyrics';
 
 function App() {
   return (
@@ -15,8 +15,11 @@ function App() {
           {/* NAVBAR COMPONENT */}
           <Nav/>
           
-          {/* TRACKS COMPONENT */}
-          <Tracks/>
+          <Switch>
+            <Route exact path="/" component={Tracks}/>
+            <Route exact path="/lyrics/track/:id" component={Lyrics}/>
+          </Switch>
+
 
         </React.Fragment>
       </Router>

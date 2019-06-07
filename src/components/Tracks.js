@@ -11,7 +11,7 @@ export default class Tracks extends Component {
                         return (<section className="section" style={{backgroundColor: '#f2f2f2'}}>
                                 <section className="container">
                                     <section className="content">
-                                        <h3 className="title has-text-centered">Loading data <span class="fa-1x"><i class="fas fa-spinner fa-spin"></i></span></h3>
+                                        <h3 className="title has-text-centered">Loading data <span className="fa-1x"><i className="fas fa-spinner fa-spin"></i></span></h3>
                                     </section>
                                 </section>
                             </section>)
@@ -22,7 +22,7 @@ export default class Tracks extends Component {
                             <section className="section" style={{backgroundColor: '#f2f2f2'}}>
                             <section className="container">
                             <section className="content">
-                            <h3 style={{color: '#3f3b3b'}} class="has-text-centered title">{value.heading.toUpperCase()}</h3>
+                            <h3 style={{color: '#3f3b3b'}} className="has-text-centered title">{value.heading.toUpperCase()}</h3>
                                 <section className="is-multiline columns">
                                 
                                {value.track_list.map(item=>{
