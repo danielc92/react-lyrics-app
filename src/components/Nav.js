@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import bg_image from '../images/musicians-690591_1920.jpg';
 
 export default function Nav() {
     return (
-        <section className="hero is-link">
+        <section className="hero is-link" style={{backgroundSize:'cover', backgroundImage:`url(${bg_image})`}}>
         <div className="hero-head">
             <nav className="navbar">
                 <div className="container">

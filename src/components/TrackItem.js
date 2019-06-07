@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 const TrackItem = (props) => {
     console.log(props);
@@ -11,6 +12,7 @@ const TrackItem = (props) => {
                 <p className="help">by: {track.artist_name}</p>
                 <p className="help">Rated: {track.track_rating}</p>
                 <p className="help">Modified: {track.updated_time}</p>
+                <button>View Lyrics</button>
             </div>
         </div>
     )
