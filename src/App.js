@@ -14,7 +14,7 @@ function App() {
           
           {/* NAVBAR COMPONENT */}
           <Nav/>
-
+          
           {/* TRACKS COMPONENT */}
           <Tracks/>
 

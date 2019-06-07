@@ -7,11 +7,18 @@ export default class Tracks extends Component {
     render() {
         return (
             <Consumer>
-                {value => {
-                    if ((value.track_list === undefined) | (value.track_list.length === 0)) {
-                        return <p>Fetching Data...</p>
+                {value => { if ((value.track_list === undefined) | (value.track_list.length === 0)) {
+                        return (<section className="section" style={{backgroundColor: '#f2f2f2'}}>
+                                <section className="container">
+                                    <section className="content">
+                                        <h3 className="title has-text-centered">Loading data <span class="fa-1x"><i class="fas fa-spinner fa-spin"></i></span></h3>
+                                    </section>
+                                </section>
+                            </section>)
                     } else {
                         return (<React.Fragment>
+                            
+
                             <section className="section" style={{backgroundColor: '#f2f2f2'}}>
                             <section className="container">
                             <section className="content">
