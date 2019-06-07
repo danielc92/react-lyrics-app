@@ -58,17 +58,19 @@ export default function Nav() {
                         <h2 className="subtitle">
                            A web application developed by Daniel Corcoran. Allows users to search popular songs, lyrics using the musixmatch API/axios as a back-end and React as a front-end..
                         </h2>
-                        <div className="box">
-                            <div className="field is-grouped">
-                                <p className="control is-expanded">
-                                    <input className="input" type="text" placeholder="Search for lyrics.."></input>
-                                </p>
-                                <p className="control">
-                                    <a className="button is-outlined is-link">
-                                        Search
-                                    </a>
-                                </p>
-                            </div>
+                        <div className="box" style={{padding: '1rem'}}>
+                            <form className="form">
+                                <div className="field is-grouped">
+                                    <p className="control is-expanded">
+                                        <input className="input" name="song-title" type="text" placeholder="Search for lyrics.."></input>
+                                    </p>
+                                    <p className="control">
+                                        <a className="button is-outlined is-link">
+                                            Search
+                                        </a>
+                                    </p>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
