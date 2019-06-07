@@ -10,11 +10,13 @@ Intermediate level of React required for this project.
 - Consumer and Provider concepts
 - Using third part external API (`musixmatch`) with `axios`
 
-
 # Tests 
 - Logging response data from API call with axios
 - Rendering Top 10 Tracks from global state
 - `Consumer` and `Provider` components working
+
+# Contributors 
+- Daniel Corcoran
 
 # Sources
 - [Lyric Search App With React & Context API [1] - Top 10 Tracks](https://www.youtube.com/watch?v=NDEt0KdDbhk)
