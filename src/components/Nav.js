@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Nav() {
     return (
-        <section className="hero is-danger">
+        <section className="hero is-link">
         <div className="hero-head">
             <nav className="navbar">
                 <div className="container">
@@ -29,23 +29,15 @@ export default function Nav() {
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#">
                                     <span className="icon">
-                                        <i className="fa fa-superpowers"></i>
-                                    </span>
-                                    <span>Examples</span>
-                                </a>
-                            </span>
-                            <span className="navbar-item">
-                                <a className="button is-white is-outlined" href="#">
-                                    <span className="icon">
                                         <i className="fa fa-book"></i>
                                     </span>
-                                    <span>Documentation</span>
+                                    <span>About</span>
                                 </a>
                             </span>
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
                                     <span className="icon">
-                                        <i className="fa fa-github"></i>
+                                        <i className="fab fa-github"></i>
                                     </span>
                                     <span>View Source</span>
                                 </a>
@@ -60,10 +52,10 @@ export default function Nav() {
                 <div className="container has-text-centered">
                     <div className="column is-6 is-offset-3">
                         <h1 className="title">
-                            Search
+                            Lyric React App
                         </h1>
                         <h2 className="subtitle">
-                           Excepteur tempor cupidatat in nisi voluptate et ullamco eu Lorem laborum. Sit exercitation sint anim nostrud. Pariatur nostrud aliquip dolore exercitation sit. Et id dolor ut officia esse voluptate velit excepteur. Reprehenderit adipisicing officia laboris eu dolore nulla ad ad. Mollit est laborum fugiat do id sint et laborum commodo qui do culpa.
+                           Excepteur tempor cupidatat in nisi voluptate d. Pariatur nostrud aliquip dolore exercitation sit. Et id dolor ut officia esse voluptate velit excepteur. Reprehenderit adipisicing officia laboris eu dolore nulla ad ad. Mollit est laborum fugiat do id sint et laborum commodo qui do culpa.
                         </h2>
                         <div className="box">
                             <div className="field is-grouped">
@@ -71,8 +63,8 @@ export default function Nav() {
                                     <input className="input" type="text" placeholder="Search for lyrics.."></input>
                                 </p>
                                 <p className="control">
-                                    <a className="button is-info">
-                                        Notify Me
+                                    <a className="button is-success">
+                                        Search
                                     </a>
                                 </p>
                             </div>
