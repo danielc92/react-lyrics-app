@@ -12,10 +12,10 @@ export default class Tracks extends Component {
                         return <p>Fetching Data...</p>
                     } else {
                         return (<React.Fragment>
-                            <section className="section">
+                            <section className="section" style={{backgroundColor: '#f2f2f2'}}>
                             <section className="container">
                             <section className="content">
-                            <h4>{value.heading}</h4>
+                            <h3 style={{color: '#3f3b3b'}} class="has-text-centered title">{value.heading.toUpperCase()}</h3>
                                 <section className="is-multiline columns">
                                 
                                {value.track_list.map(item=>{
