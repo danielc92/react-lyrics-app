@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 
 const Context = React.createContext();
 
-class Provider extends Component {
+export class Provider extends Component {
 
     state = {
-        track_list = [
+        track_list : [
             {track:{track_name:'lorem'}},
             {track:{track_name:'lorem3'}},
             {track:{track_name:'lorem2'}}
