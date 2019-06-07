@@ -12,7 +12,7 @@ const TrackItem = (props) => {
                 <p className="help">by: {track.artist_name}</p>
                 <p className="help">Rated: {track.track_rating}</p>
                 <p className="help">Modified: {track.updated_time}</p>
-                <Link component={Lyrics} data={track} className="button is-light is-outlined is-small is-fullwidth" to={`/lyrics/track/${track.track_id}`}>View lyrics for this song</Link>
+                <Link data={track} className="button is-light is-outlined is-small is-fullwidth" to={`/lyrics/track/${track.track_id}`}>View lyrics for this song</Link>
             </div>
         </div>
     )
