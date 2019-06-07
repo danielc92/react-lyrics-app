@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Consumer} from '../Context';
+import TrackItem from './TrackItem';
 
 export default class Tracks extends Component {
     render() {
@@ -13,10 +14,13 @@ export default class Tracks extends Component {
                             <section className="section">
                             <section className="container">
                             <section className="content">
-                                <h4>{value.heading}</h4>
+                            <h4>{value.heading}</h4>
+                                <section className="is-multiline columns">
+                                
                                {value.track_list.map(item=>{
-                                   <Track key={item.track.track_id} track={item.track}/>
+                                   return <TrackItem key={item.track.track_id} track={item.track}/>
                                })}
+                               </section>
                             </section>
                             </section>
                             </section>
