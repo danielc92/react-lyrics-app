@@ -1,8 +1,10 @@
-import React from 'react';
 import './App.css';
-import Nav from './components/Nav';
+import React from 'react';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom';
 import {Provider} from './Context';
+import Tracks from './components/Tracks';
+import Nav from './components/Nav';
+
 
 function App() {
   return (
@@ -10,11 +12,12 @@ function App() {
       <Router>
         <React.Fragment>
           
-          {/* THE NAVBAR */}
+          {/* NAVBAR COMPONENT */}
           <Nav/>
 
-          <h1>Lyric App</h1>
-        
+          {/* TRACKS COMPONENT */}
+          <Tracks/>
+
         </React.Fragment>
       </Router>
     </Provider>

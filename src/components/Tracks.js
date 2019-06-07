@@ -5,9 +5,7 @@ export default class Tracks extends Component {
     render() {
         return (
             <Consumer>
-                {value => {
-                    console.log(value);
-                }}
+                {value => {console.log(value)}}
 
             </Consumer>
         )

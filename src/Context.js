@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
+import axios from 'axios';
 
 const Context = React.createContext();
 
 export class Provider extends Component {
 
     state = {
-        track_list : [
-            {track:{track_name:'lorem'}},
-            {track:{track_name:'lorem3'}},
-            {track:{track_name:'lorem2'}}
-        ],
+        track_list : [],
         heading: 'Top 10 tracks'
+    }
+
+    componentDidMount() {
+        axios.get(``)
+            .then(response => console.log(response.data))
+            .catch(error => console.log(error));
     }
 
     render() {
