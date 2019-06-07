@@ -1,5 +1,6 @@
 import React from 'react';
 import bg_image from '../images/musicians-690591_1920.jpg';
+import Search from '../components/Search';
 
 export default function Nav() {
     return (
@@ -59,18 +60,7 @@ export default function Nav() {
                            A web application developed by Daniel Corcoran. Allows users to search popular songs, lyrics using the musixmatch API/axios as a back-end and React as a front-end..
                         </h2>
                         <div className="box" style={{padding: '1rem'}}>
-                            <form className="form">
-                                <div className="field is-grouped">
-                                    <p className="control is-expanded">
-                                        <input className="input" name="song-title" type="text" placeholder="Search for lyrics.."></input>
-                                    </p>
-                                    <p className="control">
-                                        <a className="button is-outlined is-link">
-                                            Search
-                                        </a>
-                                    </p>
-                                </div>
-                            </form>
+                           <Search/>
                         </div>
                     </div>
                 </div>
