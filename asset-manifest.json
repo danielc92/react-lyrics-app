@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-lyrics-app/static/css/main.8ef63b32.chunk.css",
+    "main.js": "/react-lyrics-app/static/js/main.08b7f054.chunk.js",
+    "main.js.map": "/react-lyrics-app/static/js/main.08b7f054.chunk.js.map",
+    "runtime~main.js": "/react-lyrics-app/static/js/runtime~main.765538a3.js",
+    "runtime~main.js.map": "/react-lyrics-app/static/js/runtime~main.765538a3.js.map",
+    "static/js/2.1dc6ba3a.chunk.js": "/react-lyrics-app/static/js/2.1dc6ba3a.chunk.js",
+    "static/js/2.1dc6ba3a.chunk.js.map": "/react-lyrics-app/static/js/2.1dc6ba3a.chunk.js.map",
+    "index.html": "/react-lyrics-app/index.html",
+    "precache-manifest.599df19839851ed75f71859cefb3b508.js": "/react-lyrics-app/precache-manifest.599df19839851ed75f71859cefb3b508.js",
+    "service-worker.js": "/react-lyrics-app/service-worker.js",
+    "static/css/main.8ef63b32.chunk.css.map": "/react-lyrics-app/static/css/main.8ef63b32.chunk.css.map",
+    "static/media/musicians-690591_1920.jpg": "/react-lyrics-app/static/media/musicians-690591_1920.6d3a9254.jpg"
+  }
+}
