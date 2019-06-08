@@ -14,7 +14,7 @@ export default class  extends Component {
     }
 
 
-    locateTrack = (e) => {
+    locateTrack = (dispatch, e) => {
         e.preventDefault();
 
         axios.get(
@@ -34,8 +34,9 @@ export default class  extends Component {
             <Consumer>
                 {/* value includes entire state from Context API */}
                 {value => {
+                    const { dispatch } = value;
                     return (
-                        <form onSubmit={this.locateTrack} className="form">
+                        <form onSubmit={this.locateTrack.bind(this, dispatch)} className="form">
                         <div className="field is-grouped">
                             <p className="control is-expanded">
                                 <input onChange={this.onChange} value={this.state.trackTitle} className="input" name="song_title" type="text" placeholder="Search for lyrics.."></input>
