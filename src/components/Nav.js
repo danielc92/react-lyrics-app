@@ -1,5 +1,5 @@
 import React from 'react';
-import bg_image from '../images/musicians-690591_1920.jpg';
+import bg_image from '../images/guitar-1245856_1920.jpg';
 import Search from '../components/Search';
 import {Link} from 'react-router-dom';
 
@@ -11,7 +11,7 @@ export default function Nav() {
                 <div className="container">
                     <div className="navbar-brand">
                         <p className="navbar-item">
-                            <strong>LYRIC APP</strong>
+                            <strong style={{color:'white'}}>LYRIC APP</strong>
                         </p>
                         <span className="navbar-burger burger" data-target="navbarMenu">
                             <span></span>
@@ -52,9 +52,9 @@ export default function Nav() {
 
             <div className="hero-body">
                 <div className="container has-text-centered">
-                    <div className="column is-6 is-offset-3">
+                    <div className="column is-6 is-offset-3" style={{ backgroundColor: 'rgba(0,0,0,.6)'}}>
                         <h1 className="title is-size-1">
-                            Lyric React App
+                            Lyric application
                         </h1>
                         <h2 className="subtitle">
                            A web application developed by Daniel Corcoran. Allows users to search popular songs, lyrics using the musixmatch API/axios as a back-end and React as a front-end..
