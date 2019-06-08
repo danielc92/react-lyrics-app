@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/react-lyrics-app/static/js/main.c49d181f.chunk.js",
-    "main.js.map": "/react-lyrics-app/static/js/main.c49d181f.chunk.js.map",
+    "main.js": "/react-lyrics-app/static/js/main.e8e12d52.chunk.js",
+    "main.js.map": "/react-lyrics-app/static/js/main.e8e12d52.chunk.js.map",
     "runtime~main.js": "/react-lyrics-app/static/js/runtime~main.765538a3.js",
     "runtime~main.js.map": "/react-lyrics-app/static/js/runtime~main.765538a3.js.map",
     "static/js/2.c46056fa.chunk.js": "/react-lyrics-app/static/js/2.c46056fa.chunk.js",
     "static/js/2.c46056fa.chunk.js.map": "/react-lyrics-app/static/js/2.c46056fa.chunk.js.map",
     "index.html": "/react-lyrics-app/index.html",
-    "precache-manifest.ef46e55c7f65bd1a11b022c27ef025cd.js": "/react-lyrics-app/precache-manifest.ef46e55c7f65bd1a11b022c27ef025cd.js",
+    "precache-manifest.117548f563250e6ccd9b936618b15162.js": "/react-lyrics-app/precache-manifest.117548f563250e6ccd9b936618b15162.js",
     "service-worker.js": "/react-lyrics-app/service-worker.js",
     "static/media/guitar-1245856_1920.jpg": "/react-lyrics-app/static/media/guitar-1245856_1920.ec58acb9.jpg"
   }
