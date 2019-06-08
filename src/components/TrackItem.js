@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import Lyrics from './Lyrics';
 
 const TrackItem = (props) => {
     const {track} = props;

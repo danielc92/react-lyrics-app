@@ -14,6 +14,7 @@ export default class About extends Component {
                             <li>Use of <strong>axios</strong> library to make API calls to musixmatch service</li>
                             <li>Use of global context using the Context API</li>
                             <li>Creating and using dispatchers, reducers, Providers and Consumers</li>
+                            <li>Integrating search functionality by passing url parameters to the API call</li>
                         </ul>
                         <p>This application allows the user upon the first request, to view top 10 tracks in the United States. They can also view lyrics and stats relating to songs that show up in the 'Track List'. Users can also search through the musicmatch database via API calls using the search form to locate track titles of interest.</p>
                     </section>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Consumer } from '../Context';
 
+
 export default class  extends Component {
 
     state = {
@@ -44,8 +45,11 @@ export default class  extends Component {
             <Consumer>
                 {/* value includes entire state from Context API */}
                 {value => {
+
                     const { dispatch } = value;
+
                     return (
+
                         <form onSubmit={this.locateTrack.bind(this, dispatch)} className="form">
                         <div className="field is-grouped">
                             <p className="control is-expanded">
