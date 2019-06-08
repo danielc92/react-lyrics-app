@@ -6,7 +6,7 @@ export default class About extends Component {
             <section className="section">
                 <section className="container">
                     <section className="content">
-                        <h3>About</h3>
+                    <h2 style={{color: '#3f3b3b', fontWeight: 'bold'}} className="has-text-centered title">ABOUT</h2>
                         <p>This application was built in order to start using the Context API to gain a better understanding of global context usage in React, as well as usage of third party API integration with React. Building this posed some challenges as I have not done API integration with React or used the Context API before. The application is currently being served by github pages.</p>
                         <p>I followed <a href="https://www.youtube.com/watch?v=NDEt0KdDbhk">Traverys tutorials</a> closely and made a lot of adjustments through the project, such as using a different layout, CSS framework and theming.</p>
                         <p>In general the application encompasses the following technical aspects</p>

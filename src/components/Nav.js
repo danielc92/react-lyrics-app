@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 export default function Nav() {
     return (
-        <section className="hero is-medium" style={{backgroundSize:'cover', backgroundImage:`url(${bg_image})`}}>
+        <section className="hero is-medium" style={{backgroundSize:'contain', backgroundImage:`url(${bg_image})`}}>
         <div className="hero-head">
             <nav className="navbar">
                 <div className="container">

@@ -8,7 +8,7 @@ export default class Tracks extends Component {
         return (
             <Consumer>
                 {value => { if ((value.track_list === undefined) | (value.track_list.length === 0)) {
-                        return (<section className="section" style={{backgroundColor: '#f2f2f2', height: '900px'}}>
+                        return (<section className="section" style={{height: '900px'}}>
                                 <section className="container">
                                     <section className="content">
                                     <h2 className="title is-uppercase has-text-centered" style={{fontWeight:'bold'}}>Loading Data  <span className="fa-1x"><i className="fas fa-spinner fa-spin"></i></span></h2>
@@ -19,7 +19,7 @@ export default class Tracks extends Component {
                         return (<React.Fragment>
                             
 
-                            <section className="section" style={{backgroundColor: '#f2f2f2'}}>
+                            <section className="section">
                             <section className="container">
                             <section className="content">
                             <h2 style={{color: '#3f3b3b', fontWeight: 'bold'}} className="has-text-centered title is-uppercase">{value.heading.toUpperCase()}</h2>

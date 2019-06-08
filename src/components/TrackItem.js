@@ -6,7 +6,7 @@ const TrackItem = (props) => {
     
     return (
         <div className="column is-full">
-            <div className="notification is-bold" style={{borderRadius:0, boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
+            <div className="notification is-white" style={{borderRadius:0, boxShadow: '0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
                 <div className="columns">
                     <div className="column is-two-fifths">
                         <h3 className="title is-uppercase" style={{fontWeight:'bold'}}>{track.track_name}</h3>
