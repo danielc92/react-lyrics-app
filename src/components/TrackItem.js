@@ -20,7 +20,7 @@ const TrackItem = (props) => {
                         <p className="help">Subtitle Availability: {track.has_subtitles === 1 ? <span style={{borderRadius:0}} className="tag is-info">available</span> : <span className="tag is-danger">unavailable</span>}</p>
                     </div>
                     <div className="column is-one-fith">
-                        <a style={{marginBottom: '1rem'}} className="button is-fullwidth is-dark is-outlined" href={track.track_share_url}>Share</a>
+                        <a style={{marginBottom: '1rem'}} className="button is-fullwidth is-dark is-outlined" href={track.track_share_url}>Visit Musixmatch</a>
                         {track.has_lyrics === 1 ? <Link data={track} className="button is-fullwidth is-dark is-outlined" to={`/lyrics/track/${track.track_id}`}>View Lyrics</Link> : <code style={{backgroundColor:'transparent', color:'black', paddingLeft:0}}>No lyrics exist for this track</code> }
                     </div>
                 </div>

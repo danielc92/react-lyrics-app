@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 export default function Nav() {
     return (
-        <section className="hero is-link is-medium" style={{backgroundSize:'cover', backgroundImage:`url(${bg_image})`}}>
+        <section className="hero is-medium" style={{backgroundSize:'cover', backgroundImage:`url(${bg_image})`}}>
         <div className="hero-head">
             <nav className="navbar">
                 <div className="container">
@@ -19,7 +19,7 @@ export default function Nav() {
                             <span></span>
                         </span>
                     </div>
-                    <div id="navbarMenu" className="navbar-menu">
+                    <div id="navbarMenu" className="navbar-menu" style={{backgroundColor: 'transparent'}}>
                         <div className="navbar-end">
                             <span className="navbar-item">
                             <Link className="button is-link is-outlined" exact to="/">
@@ -53,12 +53,12 @@ export default function Nav() {
             <div className="hero-body">
                 <div className="container has-text-centered">
                     <div className="column is-6 is-offset-3" style={{ backgroundColor: 'rgba(0,0,0,.6)'}}>
-                        <h1 className="title is-size-1">
-                            Lyric application
+                        <h1 style={{color:'white'}} className="title is-size-1">
+                            Lyric App
                         </h1>
-                        <h2 className="subtitle">
-                           A web application developed by Daniel Corcoran. Allows users to search popular songs, lyrics using the musixmatch API/axios as a back-end and React as a front-end..
-                        </h2>
+                        <p style={{color:'white'}} className="subtitle">
+                           This app allows users to search for songs and lyric data. This is made possible through the integration of the <span style={{fontWeight: 'bold'}}>musixmatch</span> API back-end. The front-end is built with <span style={{fontWeight:'bold'}}>React</span>.
+                        </p>
                         <div className="box" style={{padding: '1rem', backgroundColor: 'transparent'}}>
                            <Search/>
                         </div>
