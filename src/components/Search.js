@@ -32,6 +32,8 @@ export default class  extends Component {
                 });
 
                 this.setState({trackTitle:''})
+
+                window.location.href = 'http://localhost:3000/#/';
             }
         )
         .catch(
