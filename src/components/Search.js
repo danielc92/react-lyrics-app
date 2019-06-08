@@ -21,7 +21,17 @@ export default class  extends Component {
             `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page=1&page_size=10&country=us&apikey=${process.env.REACT_APP_API_KEY}`
         )
         .then(
-            response => console.log(response.data)
+            response => {
+
+                console.log(response.data.message.body.track_list);
+
+                dispatch({
+                    type: 'SEARCH_TRACKS',
+                    payload: response.data.message.body.track_list
+                });
+
+                this.setState({trackTitle:''})
+            }
         )
         .catch(
             error => console.log(error)
