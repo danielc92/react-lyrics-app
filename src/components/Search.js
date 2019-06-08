@@ -32,8 +32,15 @@ export default class  extends Component {
                 });
 
                 this.setState({trackTitle:''})
+                
+                let domain = document.domain;
 
-                window.location.href = 'http://localhost:3000/#/';
+                if (domain == 'localhost') {
+                    window.location.href = 'http://localhost:3000/#/';
+                } else {
+                    window.location.href = 'https://danielc92.github.io/react-lyrics-app/#/'
+                }
+               
             }
         )
         .catch(
