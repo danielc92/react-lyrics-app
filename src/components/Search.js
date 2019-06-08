@@ -65,7 +65,7 @@ export default class  extends Component {
                                 <input onChange={this.onChange} value={this.state.trackTitle} className="input" name="song_title" type="text" placeholder="Search for song title"></input>
                             </p>
                             <p className="control">
-                                <button type="submit" className="button is-info">
+                                <button type="submit" className="button is-link">
                                     Search
                                 </button>
                             </p>
