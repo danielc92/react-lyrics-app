@@ -1,6 +1,7 @@
 import React from 'react';
 import bg_image from '../images/musicians-690591_1920.jpg';
 import Search from '../components/Search';
+import {Link} from 'react-router-dom';
 
 export default function Nav() {
     return (
@@ -21,23 +22,22 @@ export default function Nav() {
                     <div id="navbarMenu" className="navbar-menu">
                         <div className="navbar-end">
                             <span className="navbar-item">
-                                <a className="button is-link is-outlined" href="#">
-                                    <span className="icon">
+                            <Link className="button is-link is-outlined" exact path="/">
+                            <span className="icon">
                                         <i className="fa fa-home"></i>
-                                    </span>
-                                    <span>Home</span>
-                                </a>
+                                    </span>&nbsp;&nbsp;Home
+                            </Link>                              
+
                             </span>
                             <span className="navbar-item">
-                                <a className="button is-link is-outlined" href="#">
-                                    <span className="icon">
-                                        <i className="fa fa-book"></i>
-                                    </span>
-                                    <span>About</span>
-                                </a>
+                            <Link className="button is-link is-outlined" exact path="/about">
+                            <span className="icon">
+                                        <i className="fa fa-home"></i>
+                                    </span>&nbsp;&nbsp;About
+                            </Link>   
                             </span>
                             <span className="navbar-item">
-                                <a className="button is-link is-outlined" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
+                                <a className="button is-link is-outlined" href="https://github.com/danielc92/react-lyrics-app">
                                     <span className="icon">
                                         <i className="fab fa-github"></i>
                                     </span>
