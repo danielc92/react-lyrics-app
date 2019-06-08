@@ -49,10 +49,10 @@ export default class  extends Component {
                         <form onSubmit={this.locateTrack.bind(this, dispatch)} className="form">
                         <div className="field is-grouped">
                             <p className="control is-expanded">
-                                <input onChange={this.onChange} value={this.state.trackTitle} className="input" name="song_title" type="text" placeholder="Search for lyrics.."></input>
+                                <input onChange={this.onChange} value={this.state.trackTitle} className="input" name="song_title" type="text" placeholder="Search for song title"></input>
                             </p>
                             <p className="control">
-                                <button type="submit" className="button is-outlined is-link">
+                                <button type="submit" className="button is-info">
                                     Search
                                 </button>
                             </p>

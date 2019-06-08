@@ -22,7 +22,7 @@ export default function Nav() {
                     <div id="navbarMenu" className="navbar-menu">
                         <div className="navbar-end">
                             <span className="navbar-item">
-                            <Link className="button is-link is-outlined" exact path="/">
+                            <Link className="button is-link is-outlined" exact to="/">
                             <span className="icon">
                                         <i className="fa fa-home"></i>
                                     </span>&nbsp;&nbsp;Home
@@ -30,9 +30,9 @@ export default function Nav() {
 
                             </span>
                             <span className="navbar-item">
-                            <Link className="button is-link is-outlined" exact path="/about">
+                            <Link className="button is-link is-outlined" exact to="/about">
                             <span className="icon">
-                                        <i className="fa fa-home"></i>
+                                        <i className="fas fa-info-circle"></i>
                                     </span>&nbsp;&nbsp;About
                             </Link>   
                             </span>
@@ -59,7 +59,7 @@ export default function Nav() {
                         <h2 className="subtitle">
                            A web application developed by Daniel Corcoran. Allows users to search popular songs, lyrics using the musixmatch API/axios as a back-end and React as a front-end..
                         </h2>
-                        <div className="box" style={{padding: '1rem'}}>
+                        <div className="box" style={{padding: '1rem', backgroundColor: 'transparent'}}>
                            <Search/>
                         </div>
                     </div>
