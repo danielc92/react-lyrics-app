@@ -6,6 +6,8 @@ import Tracks from './components/Tracks';
 import About from './components/About';
 import Nav from './components/Nav';
 import Lyrics from './components/Lyrics';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route exact path="/" component={Tracks}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/lyrics/track/:id" component={Lyrics}/>
+          <Footer/>
         </React.Fragment>
       </Router>
     </Provider>

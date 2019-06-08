@@ -8,7 +8,7 @@ export default class Tracks extends Component {
         return (
             <Consumer>
                 {value => { if ((value.track_list === undefined) | (value.track_list.length === 0)) {
-                        return (<section className="section" style={{backgroundColor: '#f2f2f2'}}>
+                        return (<section className="section" style={{backgroundColor: '#f2f2f2', height: '900px'}}>
                                 <section className="container">
                                     <section className="content">
                                         <h3 className="title has-text-centered">Loading data <span className="fa-1x"><i className="fas fa-spinner fa-spin"></i></span></h3>
