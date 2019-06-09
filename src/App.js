@@ -15,6 +15,7 @@ function App() {
         <React.Fragment>
           <Nav/>
           <Switch>
+          
           <Route exact path="/" component={Tracks}/>
           <Route exact path="/about" component={About}/>
           <Route exact path="/lyrics/track/:id" component={Lyrics}/>

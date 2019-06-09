@@ -33,13 +33,11 @@ export default class  extends Component {
 
                 this.setState({trackTitle:''})
                 
+                // Route back to track list
                 let domain = document.domain;
 
-                if (domain == 'localhost') {
-                    window.location.href = 'http://localhost:3000/#/';
-                } else {
-                    window.location.href = 'https://danielc92.github.io/react-lyrics-app/#/'
-                }
+                if (domain === 'localhost') { window.location.href = 'http://localhost:3000/#/'; } else 
+                { window.location.href = 'https://danielc92.github.io/react-lyrics-app/#/' }
                
             }
         )
