@@ -6,7 +6,7 @@ import TrackItem from './TrackItem';
 export default class Tracks extends Component {
     render() {
         return (
-            <section className="section" style={{height: '900px'}}>
+            <section className="section">
                 <section className="container">
                     <section className="content">
                         <Consumer>
