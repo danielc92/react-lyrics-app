@@ -4,6 +4,9 @@ import { Consumer } from '../Context';
 
 
 export default class  extends Component {
+    
+    cors_link = 'https://cors-anywhere.herokuapp.com/';
+    base_url = 'http://api.musixmatch.com/ws/1.1/';
 
     state = {
         trackTitle: ''
@@ -19,13 +22,11 @@ export default class  extends Component {
         e.preventDefault();
 
         axios.get(
-            `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page=1&page_size=10&country=us&apikey=${process.env.REACT_APP_API_KEY}`
+            `${this.cors_link}${this.base_url}track.search?q_track=${this.state.trackTitle}&page=1&page_size=10&country=us&apikey=${process.env.REACT_APP_API_KEY}`
         )
         .then(
             response => {
-
-                console.log(response.data.message.body.track_list);
-
+                // Call dispatch method from Context
                 dispatch({
                     type: 'SEARCH_TRACKS',
                     payload: response.data.message.body.track_list

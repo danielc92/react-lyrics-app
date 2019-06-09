@@ -3,6 +3,11 @@ import axios from 'axios';
 
 class Lyrics extends Component {
 
+
+    cors_link = 'https://cors-anywhere.herokuapp.com/';
+    base_url = 'http://api.musixmatch.com/ws/1.1/';
+
+
     state = {
         track: {},
         lyrics: {}
@@ -10,17 +15,15 @@ class Lyrics extends Component {
 
     componentDidMount() {
         axios.get(
-            `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_API_KEY}`
+            `${this.cors_link}${this.base_url}track.lyrics.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_API_KEY}`
             )
             .then(response => {
-                this.setState({lyrics: response.data.message.body.lyrics})
-                
-                return axios.get(`https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_API_KEY}`
 
+                this.setState({lyrics: response.data.message.body.lyrics})
+                return axios.get(`${this.cors_link}${this.base_url}track.get?track_id=${this.props.match.params.id}&apikey=${process.env.REACT_APP_API_KEY}`
                 );
             })
             .then(response => {
-                console.log(response.data.message.body.track);
                 this.setState({track:response.data.message.body.track});
             })
             .catch(error => {
