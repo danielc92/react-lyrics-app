@@ -53,15 +53,14 @@ export default function Nav() {
             <div className="hero-body">
                 <div className="container has-text-centered">
                     <div className="column is-6 is-offset-3" style={{ backgroundColor: 'rgba(0,0,0,.6)'}}>
-                        <h1 style={{color:'white'}} className="title is-size-1">
-                            Lyric App
-                        </h1>
-                        <p style={{color:'white'}} className="subtitle">
-                           This app allows users to search for songs and lyric data. This is made possible through the integration of the <span style={{fontWeight: 'bold'}}>musixmatch</span> API back-end. The front-end is built with <span style={{fontWeight:'bold'}}>React</span>.
-                        </p>
+                     
+                       
                         <div className="box" style={{padding: '1rem', backgroundColor: 'transparent'}}>
                            <Search/>
                         </div>
+                        <p style={{color:'white'}} className="subtitle">
+                        Explore a comprehensive music database. Find lyrics for your favourite songs. Powered by the musixmatch API.
+                      </p>
                     </div>
                 </div>
             </div>

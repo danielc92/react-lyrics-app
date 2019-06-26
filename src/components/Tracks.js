@@ -24,11 +24,11 @@ export default class Tracks extends Component {
                                         <thead>
                                             <tr>
                                                 <th>Title</th>
-                                                <th>Updated</th>
                                                 <th>Subtitles</th>
                                                 <th>Album</th>
                                                 <th>Link</th>
                                                 <th>Lyrics</th>
+                                                <th>Updated</th>
                                             </tr>
                                         </thead>
                                         <tbody>
