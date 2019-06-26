@@ -20,7 +20,7 @@ export default class Tracks extends Component {
                                 return (
                                 <React.Fragment>
                                     <h2 style={{color: '#3f3b3b', fontWeight: 'bold'}} className="has-text-centered title is-uppercase">{value.heading.toUpperCase()}</h2>
-                                    <table className="table">
+                                    <table className="table is-bordered is-hoverable">
                                         <thead>
                                             <tr>
                                                 <th>Title</th>
