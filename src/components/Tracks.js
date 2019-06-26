@@ -20,9 +20,22 @@ export default class Tracks extends Component {
                                 return (
                                 <React.Fragment>
                                     <h2 style={{color: '#3f3b3b', fontWeight: 'bold'}} className="has-text-centered title is-uppercase">{value.heading.toUpperCase()}</h2>
-                                    <section className="is-multiline columns">
-                                        {value.track_list.map(item=>{ return <TrackItem key={item.track.track_id} track={item.track}/>})}
-                                    </section>
+                                    <table className="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Updated</th>
+                                                <th>Subtitles</th>
+                                                <th>Album</th>
+                                                <th>Link</th>
+                                                <th>Lyrics</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {value.track_list.map(item=>{ return <TrackItem key={item.track.track_id} track={item.track}/>})}
+                                        </tbody>
+                                        
+                                    </table>
                                 </React.Fragment>
                                 )
                             }
